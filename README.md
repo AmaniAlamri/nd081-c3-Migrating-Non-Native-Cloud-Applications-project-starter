@@ -71,3 +71,8 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 
 ## Architecture Explanation
 Since we have a background process that can be run outside the application, for better and fast response time, we can move the sending message to app function, the webapp sending it to the queue, and the free tier will be fine becouse the list of email not so big. 
+
+Since we used the same service app for both azure function and webapp, this will leading to save the cost.
+
+Finally, by using the web app to hosting the web application, we can scale it on demand 
+vertically as well as horizontally.
